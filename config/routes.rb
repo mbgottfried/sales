@@ -15,6 +15,11 @@ Sales::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+  get  '/buy/:permalink', to: 'transactions#new',      as: :show_buy
+  post '/buy/:permalink', to: 'transactions#create',   as: :buy
+  get  '/pickup/:guid',   to: 'transactions#show',     as: :pickup
+  get  '/download/:guid', to: 'transactions#download', as: :download
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
