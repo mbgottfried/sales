@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', '~>3.0.0.rc'
 gem 'paperclip', '~>3.5.1'
 gem 'aws-sdk'
+gem 'stripe', '~> 1.8.3'
+gem 'httparty'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
